@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "portfolio": {
+            "type": "object",
+            "properties": {
+                "risk_tolerance": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                "dividend_reinvestment_threshold": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                }
+            }
+        },
+        "data_sources": {
+            "type": "object",
+            "properties": {
+                "api_key": {"type": "string"},
+                "endpoint": {"type": "string"}
+            }
+        }
+    }
+}
